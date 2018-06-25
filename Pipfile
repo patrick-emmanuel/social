@@ -1,0 +1,37 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+
+[packages]
+certifi = "*"
+chardet = "*"
+coreapi = "*"
+coreschema = "*"
+dj-database-url = "*"
+django-easy-audit = "*"
+django-heroku = "*"
+djangorestframework = "*"
+djangorestframework-jwt = "*"
+future = "*"
+idna = "*"
+itypes = "*"
+mysqlclient = "*"
+"psycopg2" = "*"
+pytz = "*"
+requests = "*"
+serializers = "*"
+uritemplate = "*"
+"urllib3" = "*"
+whitenoise = "*"
+Django = "*"
+"Jinja2" = "*"
+MarkupSafe = "*"
+PyJWT = "*"
+"psycopg2-binary" = "*"
+drf-openapi = "*"
+
+[requires]
+python_version = "3.6"
