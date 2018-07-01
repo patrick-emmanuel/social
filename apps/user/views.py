@@ -26,8 +26,7 @@ class UserDetailView(generics.RetrieveAPIView):
 # Endpoint for registering new users.
 
 class UserCreateView(generics.CreateAPIView):
-    authentication_classes = (JSONWebTokenAuthentication,)
-    permission_classes = (permissions.IsAuthenticated,)
+    permission_classes = (permissions.AllowAny,)
     queryset = User.objects.all()
     serializer_class = UserCreateUpdateSerializer
 
