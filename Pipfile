@@ -33,6 +33,7 @@ PyJWT = "*"
 "psycopg2-binary" = "*"
 drf-openapi = "*"
 gunicorn = "*"
+django-cors-headers = "*"
 
 [requires]
 python_version = "3.6"
