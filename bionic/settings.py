@@ -196,4 +196,5 @@ CORS_ALLOW_METHODS = (
     'POST',
     'PUT',
 )
+
 CORS_ORIGIN_ALLOW_ALL = True

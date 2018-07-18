@@ -4,6 +4,7 @@ from rest_framework.viewsets import GenericViewSet
 
 from apps.profile.models import Profile
 from apps.profile.serializers import ProfileSerializer
+from .helpers import first
 
 
 class ProfileViewSet(mixins.CreateModelMixin,
@@ -14,7 +15,7 @@ class ProfileViewSet(mixins.CreateModelMixin,
 
     def get_queryset(self):
         user = self.request.user
-        return Profile.objects.get(user=user)
+        return first(Profile.objects.filter(user=user))
 
     def get(self, pk):
         profile = self.get_queryset()
