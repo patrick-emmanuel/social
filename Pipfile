@@ -31,9 +31,11 @@ Django = "*"
 MarkupSafe = "*"
 PyJWT = "*"
 "psycopg2-binary" = "*"
-drf-openapi = "*"
 gunicorn = "*"
 django-cors-headers = "*"
+pillow = "*"
+django-rest-swagger = "*"
+django-versatileimagefield = "*"
 
 [requires]
 python_version = "3.6"
