@@ -2,26 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2480deb8-d690-40eb-8ded-13a5ec91d20b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/core/manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/core/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/image/manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/image/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/image/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/profile/signals.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/profile/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/profile/helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/profile/managers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/profile/managers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/profile/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/profile/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/profile/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/profile/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/profile/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/profile/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/profile/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/profile/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/profile/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/user/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bionic/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bionic/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bionic/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bionic/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bionic/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/user/test_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/user/test_models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/user/test_serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/user/test_serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/user/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/user/test_views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,11 +18,35 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+    <leaf>
+      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/user/serializers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_serializers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/user/test_serializers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1074">
+              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bionic/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-53">
+            <state relative-caret-position="1802">
               <caret line="208" selection-start-line="208" selection-end-line="208" />
               <folding>
                 <element signature="e#304#319#0" expanded="true" />
@@ -44,25 +55,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/profile/models.py">
+      <file leaf-file-name="test_models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/user/test_models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+            <state relative-caret-position="-153">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#0#44#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/apps/profile/serializers.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/user/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
+            <state relative-caret-position="173">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/user/test_views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
               <folding>
-                <element signature="e#0#38#0" expanded="true" />
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helpers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/helpers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,10 +135,8 @@
         <option value="$PROJECT_DIR$/apps/address/views.py" />
         <option value="$PROJECT_DIR$/apps/user/manager.py" />
         <option value="$PROJECT_DIR$/apps/user/management/commands/creategroup.py" />
-        <option value="$PROJECT_DIR$/tests/user/test_models.py" />
         <option value="$PROJECT_DIR$/tests/user/test_api.py" />
         <option value="$PROJECT_DIR$/apps/userprofile/migrations/0002_auto_20180516_1114.py" />
-        <option value="$PROJECT_DIR$/tests/helpers.py" />
         <option value="$PROJECT_DIR$/bionic/auth.py" />
         <option value="$PROJECT_DIR$/apps/address/managers.py" />
         <option value="$PROJECT_DIR$/apps/address/models.py" />
@@ -119,19 +149,14 @@
         <option value="$PROJECT_DIR$/apps/userprofile/urls.py" />
         <option value="$PROJECT_DIR$/apps/userprofile/apps.py" />
         <option value="$PROJECT_DIR$/apps/user/migrations/0001_initial.py" />
-        <option value="$PROJECT_DIR$/apps/user/serializers.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/Pipfile" />
         <option value="$PROJECT_DIR$/apps/user/urls.py" />
-        <option value="$PROJECT_DIR$/tests/user/test_views.py" />
-        <option value="$PROJECT_DIR$/tests/user/test_serializers.py" />
         <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/apps/user/views.py" />
         <option value="$PROJECT_DIR$/apps/profile/helpers.py" />
         <option value="$PROJECT_DIR$/apps/core/models.py" />
         <option value="$PROJECT_DIR$/apps/profile/urls.py" />
-        <option value="$PROJECT_DIR$/apps/core/manager.py" />
         <option value="$PROJECT_DIR$/bionic/urls.py" />
         <option value="$PROJECT_DIR$/apps/profile/migrations/0006_remove_profile_picture.py" />
         <option value="$PROJECT_DIR$/apps/image/Manager.py" />
@@ -141,12 +166,19 @@
         <option value="$PROJECT_DIR$/apps/profile/managers.py" />
         <option value="$PROJECT_DIR$/apps/image/serializers.py" />
         <option value="$PROJECT_DIR$/apps/image/models.py" />
-        <option value="$PROJECT_DIR$/apps/profile/views.py" />
         <option value="$PROJECT_DIR$/apps/image/signals.py" />
         <option value="$PROJECT_DIR$/apps/profile/signals.py" />
         <option value="$PROJECT_DIR$/apps/profile/models.py" />
         <option value="$PROJECT_DIR$/bionic/settings.py" />
         <option value="$PROJECT_DIR$/apps/profile/serializers.py" />
+        <option value="$PROJECT_DIR$/apps/core/manager.py" />
+        <option value="$PROJECT_DIR$/apps/profile/views.py" />
+        <option value="$PROJECT_DIR$/tests/helpers.py" />
+        <option value="$PROJECT_DIR$/tests/user/test_models.py" />
+        <option value="$PROJECT_DIR$/apps/user/serializers.py" />
+        <option value="$PROJECT_DIR$/tests/user/test_serializers.py" />
+        <option value="$PROJECT_DIR$/apps/user/views.py" />
+        <option value="$PROJECT_DIR$/tests/user/test_views.py" />
       </list>
     </option>
   </component>
@@ -177,30 +209,24 @@
             <path>
               <item name="social" type="b2602c69:ProjectViewProjectNode" />
               <item name="social" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="profile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="social" type="b2602c69:ProjectViewProjectNode" />
-              <item name="social" type="462c0819:PsiDirectoryNode" />
               <item name="bionic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social" type="b2602c69:ProjectViewProjectNode" />
               <item name="social" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social" type="b2602c69:ProjectViewProjectNode" />
               <item name="social" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="__sized__" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="profile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social" type="b2602c69:ProjectViewProjectNode" />
               <item name="social" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="profile_images" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -234,7 +260,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.manage">
+  <component name="RunManager" selected="Python tests.Unittests for test_serializers.UserCreateUpdateSerializerTest.test_wrong_email_format_is_valid_should_return_error_message">
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="social" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -252,6 +278,19 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Unittests for test_serializers.UserCreateUpdateSerializerTest.test_wrong_email_format_is_valid_should_return_error_message" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="social" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/user" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_serializers.UserCreateUpdateSerializerTest.test_wrong_email_format_is_valid_should_return_error_message&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
     <configuration name="Unittests for test_views.UserViewsTest.test_list_all_users" type="tests" factoryName="Unittests" temporary="true">
       <module name="social" />
@@ -283,9 +322,11 @@
       <item itemvalue="Python tests.Unittests for test_views.UserViewsTest.test_register_user" />
       <item itemvalue="Python tests.Unittests for test_views.UserViewsTest.test_list_all_users" />
       <item itemvalue="Python.manage" />
+      <item itemvalue="Python tests.Unittests for test_serializers.UserCreateUpdateSerializerTest.test_wrong_email_format_is_valid_should_return_error_message" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for test_serializers.UserCreateUpdateSerializerTest.test_wrong_email_format_is_valid_should_return_error_message" />
         <item itemvalue="Python.manage" />
         <item itemvalue="Python tests.Unittests for test_views.UserViewsTest.test_list_all_users" />
         <item itemvalue="Python tests.Unittests for test_views.UserViewsTest.test_register_user" />
@@ -318,19 +359,22 @@
     <history-entry file="Unittests_for_test_views_UserViewsTest_test_list_all_users - 2018.07.21 at 19h 00m 35s.xml">
       <configuration name="Unittests for test_views.UserViewsTest.test_list_all_users" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_test_serializers_UserCreateUpdateSerializerTest_test_wrong_email_format_is_valid_should_return_error_message - 2018.07.23 at 14h 33m 46s.xml">
+      <configuration name="Unittests for test_serializers.UserCreateUpdateSerializerTest.test_wrong_email_format_is_valid_should_return_error_message" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1313" height="743" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22467631" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22467631" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5036603" side_tool="true" weight="0.38120568" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32682925" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32520324" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Python Console" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49633968" visible="true" weight="0.3284553" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49633968" visible="true" weight="0.3203252" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -357,36 +401,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.virtualenvs/social-m650AulT/lib/python3.6/site-packages/django/db/backends/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/profile/migrations/0006_remove_profile_picture.py" />
-    <entry file="file://$PROJECT_DIR$/apps/profile/migrations/0003_auto_20180720_1835.py" />
-    <entry file="file://$PROJECT_DIR$/apps/profile/migrations/0004_remove_profile_profile_pic.py" />
-    <entry file="file://$PROJECT_DIR$/apps/address/migration/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/social-m650AulT/lib/python3.6/site-packages/rest_framework/generics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2227">
-          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/social-m650AulT/lib/python3.6/site-packages/rest_framework/viewsets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="159" column="53" selection-start-line="159" selection-start-column="53" selection-end-line="159" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/IMG_20180530_155352_j66238z.jpg" />
-    <entry file="file://$PROJECT_DIR$/media/IMG_20180530_155352_3v1M0kY.jpg" />
-    <entry file="file://$PROJECT_DIR$/media/IMG_20180530_155352_NtpL3xR.jpg" />
     <entry file="file://$PROJECT_DIR$/media/IMG_20180530_155352_BBDnRSO.jpg" />
     <entry file="file://$PROJECT_DIR$/media/IMG_20180530_155352_5bzC4RL.jpg" />
     <entry file="file://$PROJECT_DIR$/media/IMG_20180530_155352.jpg" />
@@ -498,13 +512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/core/manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/social-m650AulT/lib/python3.6/site-packages/rest_framework/authtoken/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-49">
@@ -526,62 +533,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/media/profile_images/Firefox_wallpaper_jr9judI.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/profile_images/Firefox_wallpaper_3dteQin.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/profile_images/Firefox_wallpaper_8jDPtoq.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/profile_images/Firefox_wallpaper_aOL0IE9.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/profile_images/Firefox_wallpaper_05vRpi5.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/__sized__/profile_images/Firefox_wallpaper-crop-c0-5__0-5-400x400.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/__sized__/profile_images/Firefox_wallpaper-thumbnail-100x100.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/profile_images/Firefox_wallpaper.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/__sized__/profile_images/Firefox_wallpaper-crop-c0-5__0-5-50x50.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/profile_images/IMG_20180530_155352.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/profile/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bionic/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-53">
-          <caret line="208" selection-start-line="208" selection-end-line="208" />
-          <folding>
-            <element signature="e#304#319#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/media/profile_images/Firefox_wallpaper_jr9judI.png" />
+    <entry file="file://$PROJECT_DIR$/media/profile_images/Firefox_wallpaper_3dteQin.png" />
+    <entry file="file://$PROJECT_DIR$/media/profile_images/Firefox_wallpaper_8jDPtoq.png" />
+    <entry file="file://$PROJECT_DIR$/media/profile_images/Firefox_wallpaper_aOL0IE9.png" />
+    <entry file="file://$PROJECT_DIR$/media/profile_images/Firefox_wallpaper_05vRpi5.png" />
+    <entry file="file://$PROJECT_DIR$/media/__sized__/profile_images/Firefox_wallpaper-crop-c0-5__0-5-400x400.png" />
+    <entry file="file://$PROJECT_DIR$/media/__sized__/profile_images/Firefox_wallpaper-thumbnail-100x100.png" />
+    <entry file="file://$PROJECT_DIR$/media/profile_images/Firefox_wallpaper.png" />
+    <entry file="file://$PROJECT_DIR$/media/__sized__/profile_images/Firefox_wallpaper-crop-c0-5__0-5-50x50.png" />
     <entry file="file://$USER_HOME$/.virtualenvs/social-m650AulT/lib/python3.6/site-packages/versatileimagefield/fields.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -593,18 +556,118 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/__sized__/profile_images/IMG_20180530_155352-thumbnail-100x100-70.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/__sized__/profile_images/IMG_20180530_155352-crop-c0-5__0-5-400x400-70.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/__sized__/profile_images/IMG_20180530_155352-crop-c0-5__0-5-50x50-70.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/profile_images/IMG_20180530_155352.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/core/manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/user/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/profile/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
+        <state relative-caret-position="476">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bionic/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1802">
+          <caret line="208" selection-start-line="208" selection-end-line="208" />
+          <folding>
+            <element signature="e#304#319#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/profile/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/user/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/user/test_serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1074">
+          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/user/test_models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/user/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/user/test_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>

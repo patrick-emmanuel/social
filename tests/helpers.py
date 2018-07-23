@@ -11,7 +11,7 @@ def get_authenticated_api_client():
     extra_args = {
         'username': 'bionic'
     }
-    User.users.create_user(email="inem.patrick@gmail.com", password="password", **extra_args)
+    User.objects.create_user(email="inem.patrick@gmail.com", password="password", **extra_args)
     serializer = JWTSerializer()
     attrs = {
         'username_or_email': 'inem.patrick@gmail.com',

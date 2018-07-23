@@ -45,4 +45,5 @@ class UserCreateView(generics.CreateAPIView):
 class UserUpdateView(generics.UpdateAPIView):
     queryset = User.users.all()
     serializer_class = UserCreateUpdateSerializer
-    permission_classes = (permissions.IsAuthenticated,)
+
+

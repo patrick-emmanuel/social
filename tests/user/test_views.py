@@ -13,14 +13,24 @@ class UserViewsTest(TestCase):
         self.authenticated_client = get_authenticated_api_client()
 
     def test_register_user_returns_201(self):
-        user_json = {"email": "test@test.com", "password": "password", "username": "password"}
+        user_json = {"email": "test@test.com", "password": "password", "username": "username"}
         response = self.authenticated_client.post(reverse('users:user-create'), user_json, format='json')
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
     def test_register_user_returns_user(self):
-        user_json = {"email": "test@test.com", "password": "password", "username": "password"}
+        user_json = {"email": "test@test.com", "password": "password", "username": "username"}
         response = self.authenticated_client.post(reverse('users:user-create'), user_json, format='json')
         self.assertIsNotNone(response.data.get('user'))
+
+    def test_register_user_returns_user_with_correct_email(self):
+        user_json = {"email": "test@test.com", "password": "password", "username": "username"}
+        response = self.authenticated_client.post(reverse('users:user-create'), user_json, format='json')
+        self.assertEqual(response.data.get('user')['email'], "test@test.com")
+
+    def test_register_user_returns_user_with_correct_username(self):
+        user_json = {"email": "test@test.com", "password": "password", "username": "username"}
+        response = self.authenticated_client.post(reverse('users:user-create'), user_json, format='json')
+        self.assertEqual(response.data.get('user')['username'], "username")
 
     def test_register_user_returns_token(self):
         user_json = {"email": "test@test.com", "password": "password", "username": "password"}

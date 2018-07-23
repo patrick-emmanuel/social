@@ -12,7 +12,7 @@ class UserModelTest(TestCase):
             'username': 'bionic'
         }
         Group.objects.get_or_create(name='user')
-        self.user = User.users.create_user(email="inem.patrick@gmail.com", password="password", **extra_args)
+        self.user = User.objects.create_user(email="inem.patrick@gmail.com", password="password", **extra_args)
 
     def test_string_representation(self):
         self.assertEqual(str(self.user), "bionic inem.patrick@gmail.com")
@@ -26,6 +26,10 @@ class UserModelTest(TestCase):
     def test_create_user(self):
         new_user = User.users.create_user(email="patrick@gmail.com", password="password")
         self.assertEqual("patrick@gmail.com", new_user.email)
+
+    def test_create_user_is_active(self):
+        new_user = User.users.create_user(email="patrick@gmail.com", password="password")
+        self.assertTrue(new_user.is_active)
 
     def test_save_duplicate_email_raises_integrity_error(self):
         User.users.create_user(email="duplicate@gmail.com", password="password")

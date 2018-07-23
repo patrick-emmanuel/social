@@ -3,11 +3,11 @@ from rest_framework import serializers
 from apps.user.models import User
 
 
-class UserCreateUpdateSerializer(serializers.HyperlinkedModelSerializer):
+class UserCreateUpdateSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ('email', 'username', 'uid',)
+        fields = ('email', 'username', 'password')
 
     def create(self, validated_data):
         user = User.users.create_user(
