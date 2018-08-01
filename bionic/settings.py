@@ -46,11 +46,11 @@ INSTALLED_APPS = [
     'versatileimagefield',
     'corsheaders',
     'easyaudit',
+    #'channels',
     'apps.core',
     'apps.user',
     'apps.address',
-    'apps.profile',
-    'apps.image'
+    'apps.profile'
 ]
 
 MIDDLEWARE = [
@@ -260,3 +260,24 @@ VERSATILEIMAGEFIELD_RENDITION_KEY_SETS = {
         ('small_square_crop', 'crop__200x200')
     ]
 }
+
+# celery
+CELERY_BROKER_URL = 'amqp://localhost'
+
+
+# Django channels
+# ASGI_APPLICATION = "bionic.routing.application"
+
+# asgi redis
+
+# redis_host = os.environ.get('REDIS_HOST', 'localhost')
+#
+# CHANNEL_LAYERS = {
+#     'default': {
+#         'BACKEND': 'channels_redis.core.RedisChannelLayer',
+#         'CONFIG': {
+#             "hosts": [(redis_host, 6379)],
+#         },
+#     },
+# }
+

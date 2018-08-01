@@ -36,6 +36,10 @@ django-cors-headers = "*"
 pillow = "*"
 django-rest-swagger = "*"
 django-versatileimagefield = "*"
+celery = "*"
+channels = "*"
+channels-redis = "*"
+asgi-redis = "*"
 
 [requires]
 python_version = "3.6"

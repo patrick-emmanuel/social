@@ -17,6 +17,15 @@ class UserCreateUpdateSerializer(serializers.ModelSerializer):
         )
         return user
 
+    def update(self, instance, validated_data):
+        instance.email = validated_data.get('email', instance.email)
+        instance.username = validated_data.get('username', instance.username)
+        password = validated_data.get('password')
+        if password is not None:
+            instance.set_password(password)
+        instance.save()
+        return instance
+
 
 class UserRetrieveSerializer(serializers.HyperlinkedModelSerializer):
 

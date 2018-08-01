@@ -23,8 +23,6 @@ class UserDetailView(generics.RetrieveAPIView):
     lookup_field = 'username'
 
 
-# Endpoint for registering new users.
-
 class UserCreateView(generics.CreateAPIView):
     permission_classes = (permissions.AllowAny,)
     queryset = User.objects.all()
@@ -45,5 +43,6 @@ class UserCreateView(generics.CreateAPIView):
 class UserUpdateView(generics.UpdateAPIView):
     queryset = User.users.all()
     serializer_class = UserCreateUpdateSerializer
+    lookup_field = 'username'
 
 

@@ -12,12 +12,12 @@ class JWTSerializer(JSONWebTokenSerializer):
         password = attrs.get("password")
         user_obj = User.users.filter(email=attrs.get("username_or_email")).first() or \
             User.users.filter(username=attrs.get("username_or_email")).first()
-        print(user_obj)
         if user_obj:
             credentials = {
                 'username': user_obj.email,
                 'password': password
             }
+            print(credentials)
             if all(credentials.values()):
                 user = authenticate(**credentials)
                 if user:

@@ -54,3 +54,19 @@ class UserViewsTest(TestCase):
         user = User.users.get(username='bionic')
         response = self.authenticated_client.get(reverse('users:user-detail', args=[user.username]))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_update_a_user_200(self):
+        user_json = {"email": "inem.patrick@gmail.com", "password": "new_password", "username": "username"}
+        user = User.users.get(username='bionic')
+        response = self.authenticated_client.put(reverse('users:user-update',
+                                                         args=[user.username]), user_json, format='json')
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_update_a_user_should_update_password(self):
+        user_json = {"email": "inem.patrick@gmail.com", "password": "new_password", "username": "bionic"}
+        user = User.users.get(username='bionic')
+        current_password = user.password
+        self.authenticated_client.put(reverse('users:user-update',
+                                              args=[user.username]), user_json, format='json')
+        user.refresh_from_db()
+        self.assertNotEqual(user.password, current_password)
