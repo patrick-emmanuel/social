@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from versatileimagefield.serializers import VersatileImageFieldSerializer
 
+from .helpers import recreate_image
 from .models import ProfileImage
 from .models import Profile
 
@@ -28,21 +29,17 @@ class ProfileImageSerializer(serializers.ModelSerializer):
         fields = ('image',)
 
     def create(self, validated_data):
-        image = validated_data.pop('image')
+        image_file = validated_data.pop('image')
         profile = validated_data.pop('profile')
         if profile is None:
             profile = Profile.objects.create(user=self.context['request'].user)
-            profile_image = ProfileImage.objects.create(profile=profile, image=image)
+            profile_image = ProfileImage.objects.create(profile=profile, image=image_file)
         else:
             profile_image_set = ProfileImage.objects.filter(profile=profile)
-            if len(profile_image_set) > 0:
-                profile_image = profile_image_set[0]
-                profile_image.image.delete_all_created_images()
-                profile_image.image.delete(False)
-                profile_image.image = image
-                profile_image.save()
+            if profile_image_set:
+                profile_image = recreate_image(profile_image_set[0].image, image_file)
             else:
-                profile_image = ProfileImage.objects.create(profile=profile, image=image)
+                profile_image = ProfileImage.objects.create(profile=profile, image=image_file)
         return profile_image
 
     def update(self, instance, validated_data):

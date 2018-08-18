@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 
 import uuid
 from django.contrib.auth.base_user import AbstractBaseUser
-from django.contrib.auth.models import Group
+from django.contrib.auth.models import Group, PermissionsMixin
 from django.db import models
 
 from apps.user.manager import UserManager
@@ -12,7 +12,7 @@ from apps.user.manager import UserManager
 # Create your models here.
 
 
-class User(AbstractBaseUser):
+class User(PermissionsMixin, AbstractBaseUser):
     uid = models.UUIDField(
         unique=True,
         editable=False,
@@ -22,7 +22,6 @@ class User(AbstractBaseUser):
     email = models.EmailField(max_length=100, unique=True)
     username = models.CharField(null=False, max_length=50, unique=True)
     is_active = models.BooleanField(default=True)
-    groups = models.ManyToManyField(Group)
 
     USERNAME_FIELD = 'email'
 
