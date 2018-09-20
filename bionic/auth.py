@@ -17,7 +17,6 @@ class JWTSerializer(JSONWebTokenSerializer):
                 'username': user_obj.email,
                 'password': password
             }
-            print(credentials)
             if all(credentials.values()):
                 user = authenticate(**credentials)
                 if user:
