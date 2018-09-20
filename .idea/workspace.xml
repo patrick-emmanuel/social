@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2480deb8-d690-40eb-8ded-13a5ec91d20b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/user/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bionic/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/bionic/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bionic/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bionic/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="2480deb8-d690-40eb-8ded-13a5ec91d20b" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,27 +45,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="606" />
+          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="Python" value="739" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="115" />
-          <entry key="py" value="491" />
+          <entry key="lock" value="7" />
+          <entry key="py" value="624" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="37" />
-          <entry key="TOML file" value="3" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Python" value="40" />
+          <entry key="TOML file" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Pipfile" value="3" />
-          <entry key="lock" value="1" />
-          <entry key="py" value="37" />
+          <entry key="Pipfile" value="4" />
+          <entry key="lock" value="2" />
+          <entry key="mydatabase" value="1" />
+          <entry key="py" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -81,32 +77,26 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/user/schema.py">
+        <entry file="file://$PROJECT_DIR$/bionic/schema.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+            <state relative-caret-position="153">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <marker date="1537448466119" expanded="true" signature="292:297" ph="..." />
+                <element signature="e#0#15#0" expanded="true" />
+                <marker date="1537451469034" expanded="true" signature="99:104" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/.virtualenvs/social-m650AulT/lib/python3.6/site-packages/graphene_django/filter/fields.py">
+        <entry file="file://$PROJECT_DIR$/bionic/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/user/serializers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="140">
+              <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+              <folding>
+                <element signature="e#628#660#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,7 +104,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bionic/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
+            <state relative-caret-position="-3358">
               <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
             </state>
           </provider>
@@ -149,8 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/apps/address/views.py" />
-        <option value="$PROJECT_DIR$/apps/user/manager.py" />
         <option value="$PROJECT_DIR$/apps/user/management/commands/creategroup.py" />
         <option value="$PROJECT_DIR$/tests/user/test_api.py" />
         <option value="$PROJECT_DIR$/apps/userprofile/migrations/0002_auto_20180516_1114.py" />
@@ -170,7 +158,6 @@
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/apps/core/models.py" />
         <option value="$PROJECT_DIR$/apps/profile/urls.py" />
-        <option value="$PROJECT_DIR$/bionic/urls.py" />
         <option value="$PROJECT_DIR$/apps/profile/migrations/0006_remove_profile_picture.py" />
         <option value="$PROJECT_DIR$/apps/image/Manager.py" />
         <option value="$PROJECT_DIR$/apps/image/migrations/0001_initial.py" />
@@ -200,10 +187,13 @@
         <option value="$PROJECT_DIR$/bionic/auth.py" />
         <option value="$PROJECT_DIR$/bionic/settings.py" />
         <option value="$PROJECT_DIR$/apps/user/schema.py" />
+        <option value="$PROJECT_DIR$/Pipfile.lock" />
+        <option value="$PROJECT_DIR$/bionic/schema.py" />
+        <option value="$PROJECT_DIR$/bionic/urls.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="641" />
     <option name="y" value="88" />
     <option name="width" value="672" />
@@ -227,12 +217,6 @@
               <item name="social" type="b2602c69:ProjectViewProjectNode" />
               <item name="social" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="social" type="b2602c69:ProjectViewProjectNode" />
-              <item name="social" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social" type="b2602c69:ProjectViewProjectNode" />
@@ -402,8 +386,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1313" height="743" extended-state="7" />
-    <editor active="true" />
+    <frame x="0" y="25" width="1313" height="743" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22178988" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -439,8 +422,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/media/profile_images/Firefox_wallpaper_aOL0IE9.png" />
-    <entry file="file://$PROJECT_DIR$/media/profile_images/Firefox_wallpaper_05vRpi5.png" />
     <entry file="file://$PROJECT_DIR$/media/__sized__/profile_images/Firefox_wallpaper-crop-c0-5__0-5-400x400.png" />
     <entry file="file://$PROJECT_DIR$/media/__sized__/profile_images/Firefox_wallpaper-thumbnail-100x100.png" />
     <entry file="file://$PROJECT_DIR$/media/profile_images/Firefox_wallpaper.png" />
@@ -520,9 +501,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bionic/celery.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pipfile.lock">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/bionic/wsgi.py">
@@ -612,13 +590,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bionic/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="36" column="82" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="82" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -636,35 +610,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pipfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="38" selection-start-line="38" selection-end-line="38" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/user/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bionic/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/user/schema.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <marker date="1537448466119" expanded="true" signature="292:297" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -679,6 +628,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/user/schema.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <marker date="1537448466119" expanded="true" signature="292:297" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pipfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="38" selection-start-line="38" selection-end-line="38" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydatabase">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pipfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bionic/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3358">
+          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bionic/schema.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1537451469034" expanded="true" signature="99:104" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bionic/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+          <folding>
+            <element signature="e#628#660#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

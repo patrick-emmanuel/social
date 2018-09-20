@@ -17,27 +17,17 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path, include
 from django.contrib import admin
-from rest_framework_jwt.views import (
-    refresh_jwt_token,
-    verify_jwt_token,
-    ObtainJSONWebToken
-)
+from graphene_django.views import GraphQLView
 from rest_framework_swagger.views import get_swagger_view
 
-from bionic.auth import JWTSerializer
 
 schema_view = get_swagger_view(title='Social API')
 
 urlpatterns = [
     path('api/', include([
         path('admin/', admin.site.urls),
+        path('graphql', GraphQLView.as_view(graphiql=True)),
         path('users/', include('apps.user.urls', namespace='users')),
-
-        # Authentication routes.
-        path('login', ObtainJSONWebToken.as_view(serializer_class=JWTSerializer)),
-        path('api-token-refresh', refresh_jwt_token),
-        path('api-token-verify', verify_jwt_token),
-        path('docs/', schema_view)
     ]))
 ]
 
