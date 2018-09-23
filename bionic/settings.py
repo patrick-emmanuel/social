@@ -252,7 +252,6 @@ CELERY_BROKER_URL = 'amqp://localhost'
 #     },
 # }
 
-# graphql
-GRAPHENE = {
-    'SCHEMA': 'social.bionic.schema'
+GRAPHQL_JWT = {
+    'JWT_AUTH_HEADER_PREFIX': 'Bearer'
 }

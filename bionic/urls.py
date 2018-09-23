@@ -20,15 +20,16 @@ from django.contrib import admin
 from graphene_django.views import GraphQLView
 from rest_framework_swagger.views import get_swagger_view
 
+from .schema import schema
 
 schema_view = get_swagger_view(title='Social API')
 
 urlpatterns = [
     path('api/', include([
         path('admin/', admin.site.urls),
-        path('graphql', GraphQLView.as_view(graphiql=True)),
         path('users/', include('apps.user.urls', namespace='users')),
-    ]))
+    ])),
+    path('graphql', GraphQLView.as_view(graphiql=True, schema=schema)),
 ]
 
 if settings.DEBUG is True:

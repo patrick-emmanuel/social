@@ -8,6 +8,7 @@ from .models import User
 class UserNode(DjangoObjectType):
     class Meta:
         model = User
+        filter_fields = ('uid', 'username', 'email', 'is_active',)
         interfaces = (relay.Node, )
 
 
