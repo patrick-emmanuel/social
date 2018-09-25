@@ -2,7 +2,7 @@ from graphene import relay
 from graphene_django import DjangoObjectType
 from graphene_django.filter import DjangoFilterConnectionField
 
-from .models import User
+from apps.user.models import User
 
 
 class UserNode(DjangoObjectType):

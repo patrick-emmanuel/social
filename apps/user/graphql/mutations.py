@@ -1,13 +1,9 @@
 import graphene
 from graphene.relay import ClientIDMutation
-from apps.user.models import User
-from apps.user.schema import UserNode
 
-
-class UserInput(graphene.InputObjectType):
-    email = graphene.String(required=True)
-    username = graphene.String(required=True)
-    password = graphene.String(required=True)
+from .types import UserInput
+from ..models import User
+from .schema import UserNode
 
 
 class CreateUser(ClientIDMutation):
