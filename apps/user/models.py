@@ -5,6 +5,7 @@ import uuid
 from django.contrib.auth.base_user import AbstractBaseUser
 from django.contrib.auth.models import Group, PermissionsMixin
 from django.db import models
+from django.forms import model_to_dict
 
 from apps.user.manager import UserManager
 
@@ -33,6 +34,9 @@ class User(PermissionsMixin, AbstractBaseUser):
 
     def __str__(self):
         return "{} {}".format(self.username, self.email)
+
+    def as_data(self):
+        return model_to_dict(self, exclude=['id'])
 
     users = UserManager()
     objects = UserManager()

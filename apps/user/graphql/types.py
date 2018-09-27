@@ -1,7 +1,11 @@
-import graphene
+from django.contrib.auth import get_user_model
+from graphene import relay
+
+from apps.core.graphql.common import CountableDjangoObjectType
 
 
-class UserInput(graphene.InputObjectType):
-    email = graphene.String(required=True)
-    username = graphene.String(required=True)
-    password = graphene.String(required=True)
+class User(CountableDjangoObjectType):
+    class Meta:
+        model = get_user_model()
+        filter_fields = ('is_active',)
+        interfaces = (relay.Node,)

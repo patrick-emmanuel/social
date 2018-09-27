@@ -1,22 +1,44 @@
 import graphene
-from graphene.relay import ClientIDMutation
+from django.contrib.auth import get_user_model
 
-from .types import UserInput
-from ..models import User
-from .schema import UserNode
+from apps.core.graphql.mutation import ModelMutation
 
 
-class CreateUser(ClientIDMutation):
-    class Input:
-        user = graphene.Argument(UserInput)
-    new_user = graphene.Field(UserNode)
+class UserInput(graphene.InputObjectType):
+    email = graphene.String(
+        description="The email of the user to create")
+    username = graphene.String(
+        description="The username of the user to create")
+    password = graphene.String(
+        description="The password of the user to create")
+
+
+class UserCreate(ModelMutation):
+    class Arguments:
+        input = UserInput(required=True)
+
+    class Meta:
+        description = 'Creates a new user.'
+        model = get_user_model()
+
+
+class UserUpdate(ModelMutation):
+    class Arguments:
+        id = graphene.ID(
+            required=True, description='ID of a user to update.')
+        input = UserInput(
+            required=True,
+            description='Fields required to update a user.')
+
+    class Meta:
+        description = 'Updates a user.'
+        model = get_user_model()
 
     @classmethod
-    def mutate_and_get_payload(cls, root, info, **input):
-        user_data = input['user']
-        user = User.objects.create_user(
-            email=user_data.pop('email'),
-            password=user_data.pop('password'),
-            **user_data
-        )
-        return cls(new_user=user)
+    def save(cls, info, instance, cleaned_input):
+        instance.email = cleaned_input.get('email', instance.email)
+        instance.username = cleaned_input.get('username', instance.username)
+        password = cleaned_input.get('password')
+        if password is not None:
+            instance.set_password(password)
+        instance.save()

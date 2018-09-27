@@ -1,17 +1,18 @@
-from graphene import relay
-from graphene_django import DjangoObjectType
+import graphene
 from graphene_django.filter import DjangoFilterConnectionField
 
-from apps.user.models import User
+from apps.user.graphql.resolvers import resolve_users
+from apps.user.graphql.types import User
 
 
-class UserNode(DjangoObjectType):
-    class Meta:
-        model = User
-        filter_fields = ('uid', 'username', 'email', 'is_active',)
-        interfaces = (relay.Node, )
+class Query:
+    user = graphene.Field(
+        User, id=graphene.Argument(graphene.ID),
+        description='Lookup a user by ID.')
+    all_users = DjangoFilterConnectionField(User)
 
+    def resolve_user(self, info, id):
+        return graphene.Node.get_node_from_global_id(info, id, User)
 
-class Query(object):
-    user = relay.Node.Field(UserNode)
-    all_users = DjangoFilterConnectionField(UserNode)
+    def resolve_users(self, info, query=None, **kwargs):
+        return resolve_users(info, query=query)
