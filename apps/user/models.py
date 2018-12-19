@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 
 import uuid
 from django.contrib.auth.base_user import AbstractBaseUser
-from django.contrib.auth.models import Group, PermissionsMixin
+from django.contrib.auth.models import PermissionsMixin
 from django.db import models
 from django.forms import model_to_dict
 
